@@ -12,7 +12,7 @@ def find_calorific_elf
     highest_calorie = 0
     calorie_group_count = 0
 
-    File.foreach("./input-problem-1.txt") do |line|
+    File.foreach("./input.txt") do |line|
         if line == "\n"
             highest_calorie = calorie_group_count if calorie_group_count > highest_calorie
             calorie_group_count = 0
